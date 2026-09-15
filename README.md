@@ -2,11 +2,16 @@
 
 Marketing website for **Rias**, a craft-focused bespoke tailoring atelier. Built as a single-page, mobile-responsive experience with smooth-scroll navigation.
 
+**Live site:** [https://sidharthasajeev2000.github.io/rias/](https://sidharthasajeev2000.github.io/rias/)
+
+> **GitHub Pages:** set the Pages source to **GitHub Actions** (not “Deploy from a branch”). The workflow in `.github/workflows/deploy-pages.yml` builds the Next.js static export and publishes the `out/` folder.
+
 ## Stack
 
 - [Next.js](https://nextjs.org/) (App Router) + TypeScript
 - [Tailwind CSS](https://tailwindcss.com/) v4
 - Google Fonts: Cormorant Garamond (serif) + Outfit (sans)
+- Static export for GitHub Pages (`output: 'export'`, `basePath: '/rias'`)
 
 ## Assumptions
 
@@ -22,16 +27,16 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000).
+Open [http://localhost:3000/rias/](http://localhost:3000/rias/) (dev server respects `basePath`).
 
 ## Scripts
 
-| Command           | Description              |
-| ----------------- | ------------------------ |
-| `npm run dev`     | Start development server |
-| `npm run build`   | Production build         |
-| `npm run start`   | Serve production build   |
-| `npm run lint`    | Run ESLint               |
+| Command           | Description                                  |
+| ----------------- | -------------------------------------------- |
+| `npm run dev`     | Start development server                     |
+| `npm run build`   | Production static export → `out/`            |
+| `npm run start`   | Serve production build (not used for Pages)  |
+| `npm run lint`    | Run ESLint                                   |
 
 ## Design notes
 
