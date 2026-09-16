@@ -93,8 +93,9 @@ export default function Contact() {
             Book a visit
           </h2>
           <p className="mt-4 text-base leading-relaxed text-stone sm:text-lg">
-            Tell us about your little one — fittings, portfolio looks, party
-            outfits, or shoot styling. We&apos;ll reply with a warm next step.
+            Tell us about you or your model — fittings, portfolio looks, runway
+            and pageants, party outfits, or shoot styling. We&apos;ll reply with
+            a warm next step.
           </p>
 
           <dl className="mt-10 space-y-6 text-sm sm:text-base">
@@ -137,10 +138,10 @@ export default function Contact() {
               </dt>
               <dd className="mt-1.5">
                 <a
-                  href="mailto:hello@rias-kids.example"
+                  href="mailto:hello@rias.example"
                   className="text-rose-deep underline-offset-4 hover:underline"
                 >
-                  hello@rias-kids.example
+                  hello@rias.example
                 </a>
               </dd>
             </div>
@@ -232,12 +233,12 @@ export default function Contact() {
                     className={inputClass(!!errors.service)}
                   >
                     <option value="">Select…</option>
-                    <option value="kidswear-fittings">Kidswear fittings</option>
+                    <option value="fittings">Kids &amp; adult fittings</option>
                     <option value="portfolio-looks">Portfolio looks</option>
+                    <option value="runway-pageants">Runway &amp; pageants</option>
                     <option value="party-occasion">Party &amp; occasion</option>
-                    <option value="kids-alterations">Kids alterations</option>
                     <option value="shoot-styling">Shoot styling</option>
-                    <option value="wardrobe-consult">Mini wardrobe consult</option>
+                    <option value="wardrobe-consult">Wardrobe consult</option>
                   </select>
                 </Field>
               </div>
@@ -253,7 +254,7 @@ export default function Contact() {
                   aria-describedby={
                     errors.message ? "message-error" : undefined
                   }
-                  placeholder="Tell us about your little star…"
+                  placeholder="Tell us about you or your model…"
                   className={`${inputClass(!!errors.message)} resize-y`}
                 />
               </Field>

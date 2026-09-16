@@ -12,7 +12,7 @@ export default function About() {
               <div className="aspect-square bg-gradient-to-br from-rose to-blush-deep p-6 text-cream">
                 <p className="font-serif text-4xl">♡</p>
                 <p className="mt-2 text-xs font-semibold uppercase tracking-[0.18em] text-cream/80">
-                  Made for kids
+                  All women
                 </p>
               </div>
               <div className="aspect-square bg-ivory p-6">
@@ -45,23 +45,23 @@ export default function About() {
             id="about-heading"
             className="mt-3 font-serif text-3xl tracking-tight text-rose-deep sm:text-4xl md:text-5xl"
           >
-            A small kids fashion studio with a big soft heart
+            A soft fashion studio for women and girls
           </h2>
           <div className="mt-6 space-y-4 text-base leading-relaxed text-stone sm:text-lg">
             <p>
-              RIAS started as a cozy corner for children&apos;s clothes — pastel
-              rails, tiny hangers, and the belief that kids deserve outfits as
-              joyful as they are.
+              RIAS began as a cozy corner for sweet styles — pastel rails,
+              careful fittings, and the belief that every girl and woman
+              deserves outfits as joyful as she is.
             </p>
             <p>
-              We focus on young models and everyday little stars: portfolio
-              looks, party pieces, gentle alterations, and styling for fashion
-              shows and competitions — from Little Miss Model moments to festive
-              runway wins.
+              We welcome female models of all ages: kids and adults — portfolio
+              looks, party and occasion pieces, gentle alterations, and styling
+              for fashion shows, runway, and pageants.
             </p>
             <p>
-              Intentionally small, intentionally sweet. Parents feel welcome;
-              kids feel like the main character — which, of course, they are.
+              Intentionally small, intentionally sweet. Families and models feel
+              welcome; every client feels like the main character — which, of
+              course, she is.
             </p>
           </div>
         </div>

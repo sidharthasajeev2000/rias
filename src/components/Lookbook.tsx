@@ -85,7 +85,7 @@ const pieces = [
     priority: false,
   },
   {
-    title: "Kids PG & PE · Harapan 2",
+    title: "PG & PE · Harapan 2",
     caption: "Pink floral stage look · Award night",
     src: g("kids-pg-pe-harapan-2.jpg"),
     alt: "Young model in a pink floral stage outfit holding a Harapan 2 certificate and trophy at Kids PG and PE",
@@ -167,11 +167,12 @@ export default function Lookbook() {
               id="lookbook-heading"
               className="mt-3 font-serif text-3xl tracking-tight sm:text-4xl md:text-5xl"
             >
-              Little looks we adore
+              Looks we adore
             </h2>
             <p className="mt-4 text-base leading-relaxed text-cream/75 sm:text-lg">
-              Real runway and award moments — Little Miss Model, fashion shows,
-              Best Performance, and cute costume looks that capture RIAS energy.
+              Real runway and award moments — pageants, fashion shows, Best
+              Performance, and stage looks that capture RIAS energy for women
+              and girls.
             </p>
           </div>
         </div>

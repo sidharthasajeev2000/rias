@@ -17,22 +17,24 @@ const nunito = Nunito({
 });
 
 export const metadata: Metadata = {
-  title: "RIAS — Kids Modeling & Children's Fashion",
+  title: "RIAS — Women & Girls Modeling",
   description:
-    "RIAS is a cute kidswear and children's modeling brand — portfolio looks, party outfits, kids fittings, shoot styling, and little-star fashion moments.",
+    "RIAS is a women and girls modeling brand — kids and adult female models, portfolio looks, fittings, runway, pageants, and soft styling with a cute blush aesthetic.",
   keywords: [
+    "women modeling",
+    "girls modeling",
+    "female models",
     "kids modeling",
-    "children's fashion",
-    "kidswear",
-    "kids outfits",
+    "adult modeling",
     "model portfolio",
-    "party dresses kids",
+    "runway",
+    "pageants",
     "RIAS",
   ],
   openGraph: {
-    title: "RIAS — Kids Modeling & Children's Fashion",
+    title: "RIAS — Women & Girls Modeling",
     description:
-      "Little stars, soft styles. Cute kidswear, portfolio looks, and styling for young models.",
+      "All women. All ages. Soft styles for girls and women — portfolio, runway, pageants, and fittings.",
     type: "website",
     locale: "en_US",
   },

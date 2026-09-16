@@ -1,6 +1,6 @@
-# RIAS — Kids Modeling & Children's Fashion
+# RIAS — Women & Girls Modeling
 
-Marketing website for **RIAS**, a cute kidswear and children's modeling brand. Built as a single-page, mobile-responsive experience with smooth-scroll navigation.
+Marketing website for **RIAS**, a cute women and girls modeling brand (kids and adult female models). Built as a single-page, mobile-responsive experience with smooth-scroll navigation.
 
 **Live site:** [https://sidharthasajeev2000.github.io/rias/](https://sidharthasajeev2000.github.io/rias/)
 
@@ -42,7 +42,7 @@ Open [http://localhost:3000/rias/](http://localhost:3000/rias/) (dev server resp
 
 - Palette: blush pinks, soft lilac, cream, warm white, soft gold accents.
 - Typography: large Cormorant serif **RIAS** wordmark; rounded Nunito body.
-- Tone: girly, cute, polished — kids modeling / children's fashion, not adult bespoke.
+- Tone: girly, cute, polished — women and girls modeling (kids + adults), all female.
 
 ## License
 

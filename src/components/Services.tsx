@@ -1,8 +1,8 @@
 const services = [
   {
-    title: "Kidswear fittings",
+    title: "Kids & adult fittings",
     description:
-      "Gentle, playful fittings so outfits sit just right — comfort first, camera-ready next.",
+      "Gentle, playful fittings for girls and women — comfort first, camera-ready next.",
     icon: (
       <svg viewBox="0 0 40 40" className="h-9 w-9" fill="none" aria-hidden="true">
         <path
@@ -19,7 +19,7 @@ const services = [
   {
     title: "Portfolio looks",
     description:
-      "Clean, cute looks styled for modeling books — natural fabrics, soft colors, and age-appropriate polish.",
+      "Clean, cute looks styled for modeling books — soft colors, polished fits for every age.",
     icon: (
       <svg viewBox="0 0 40 40" className="h-9 w-9" fill="none" aria-hidden="true">
         <rect x="8" y="10" width="24" height="20" rx="3" stroke="currentColor" strokeWidth="1.5" />
@@ -29,9 +29,9 @@ const services = [
     ),
   },
   {
-    title: "Party & occasion",
+    title: "Runway & pageants",
     description:
-      "Birthday dresses, festive sets, and special-day outfits with sweet details little ones love.",
+      "Stage-ready styling for fashion shows, competitions, and pageant moments — girls and women.",
     icon: (
       <svg viewBox="0 0 40 40" className="h-9 w-9" fill="none" aria-hidden="true">
         <path
@@ -45,25 +45,25 @@ const services = [
     ),
   },
   {
-    title: "Kids alterations",
+    title: "Party & occasion",
     description:
-      "Hems, waist tweaks, and soft adjustments so hand-me-downs and new pieces fit growing stars.",
+      "Birthday dresses, festive sets, and special-day outfits with sweet details you will love.",
     icon: (
       <svg viewBox="0 0 40 40" className="h-9 w-9" fill="none" aria-hidden="true">
         <path
-          d="M10 28l12-12 6 6-12 12H10v-6z"
+          d="M14 12c0-3.3 2.7-6 6-6s6 2.7 6 6c0 2-1 3.8-2.5 4.9L28 34H12l4.5-17.1C15 15.8 14 14 14 12z"
           stroke="currentColor"
           strokeWidth="1.5"
           strokeLinejoin="round"
         />
-        <path d="M20 18l4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+        <path d="M16 22h8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
       </svg>
     ),
   },
   {
     title: "Shoot styling",
     description:
-      "On-set and studio styling for kids — coordinated looks, quick changes, and calm, cheerful energy.",
+      "On-set and studio styling — coordinated looks, quick changes, and calm, cheerful energy.",
     icon: (
       <svg viewBox="0 0 40 40" className="h-9 w-9" fill="none" aria-hidden="true">
         <circle cx="20" cy="16" r="5" stroke="currentColor" strokeWidth="1.5" />
@@ -78,9 +78,9 @@ const services = [
     ),
   },
   {
-    title: "Mini wardrobe consults",
+    title: "Wardrobe consults",
     description:
-      "Help building a small capsule of cute everyday + occasion pieces parents can mix with ease.",
+      "Help building a small capsule of cute everyday + occasion pieces you can mix with ease.",
     icon: (
       <svg viewBox="0 0 40 40" className="h-9 w-9" fill="none" aria-hidden="true">
         <path
@@ -112,11 +112,12 @@ export default function Services() {
             id="services-heading"
             className="mt-3 font-serif text-3xl tracking-tight text-rose-deep sm:text-4xl md:text-5xl"
           >
-            Cute looks for little stars
+            Cute looks for every star
           </h2>
           <p className="mt-4 text-base leading-relaxed text-stone sm:text-lg">
-            From first portfolio shots to birthday sparkle, RIAS helps kids look
-            and feel wonderful — softly, sweetly, and age-appropriately.
+            From first portfolio shots to runway and pageant sparkle, RIAS helps
+            women and girls look and feel wonderful — softly, sweetly, and with
+            care at every age.
           </p>
         </div>
 

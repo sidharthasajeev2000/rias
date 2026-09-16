@@ -34,7 +34,7 @@ export default function Hero() {
         <div>
           <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-line bg-ivory/80 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.22em] text-rose">
             <span aria-hidden="true">♡</span>
-            Kids modeling &amp; cute kidswear
+            Women &amp; girls modeling
           </p>
           <h1
             id="hero-heading"
@@ -43,12 +43,12 @@ export default function Hero() {
             RIAS
           </h1>
           <p className="mt-4 font-serif text-2xl italic leading-snug text-rose-soft sm:text-3xl md:text-4xl">
-            Little stars, soft styles.
+            Soft styles. Every age.
           </p>
           <p className="mt-6 max-w-xl text-base leading-relaxed text-stone sm:text-lg">
-            RIAS is a sweet space for children&apos;s fashion and young models —
-            portfolio looks, party-ready outfits, gentle fittings, and styling
-            that lets little personalities shine.
+            RIAS is a sweet space for female models — girls and women —
+            portfolio looks, runway and pageant prep, gentle fittings, and
+            styling that lets every personality shine.
           </p>
           <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:items-center">
             <a
@@ -88,7 +88,7 @@ export default function Hero() {
               </svg>
               <div className="relative pt-2">
                 <p className="text-xs font-semibold uppercase tracking-[0.24em] text-rose">
-                  For little models
+                  For women &amp; girls
                 </p>
                 <p className="mt-4 font-serif text-3xl leading-snug md:text-4xl">
                   Cute looks.
@@ -100,10 +100,10 @@ export default function Hero() {
               </div>
               <div className="relative border-t border-rose-deep/15 pt-5">
                 <p className="text-xs font-semibold uppercase tracking-[0.2em] text-rose">
-                  Kids fashion atelier
+                  Modeling atelier
                 </p>
                 <p className="mt-2 text-sm text-rose-deep/75">
-                  Portfolio looks · Party outfits · Shoot styling
+                  Kids &amp; adult · Portfolio · Runway · Pageants
                 </p>
               </div>
             </div>

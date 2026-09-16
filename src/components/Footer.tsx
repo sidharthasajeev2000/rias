@@ -12,7 +12,7 @@ export default function Footer() {
             RIAS
           </a>
           <p className="mt-1 text-sm text-stone">
-            Kids modeling · Cute kidswear · Little stars
+            Women &amp; girls modeling · Soft styles · Every age
           </p>
         </div>
         <nav className="flex flex-wrap gap-x-6 gap-y-2 text-sm font-medium text-stone" aria-label="Footer">
