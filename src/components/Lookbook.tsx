@@ -1,39 +1,56 @@
+import Image from "next/image";
+
+/** Public asset path including GitHub Pages basePath (Image unoptimized may not prefix). */
+const g = (file: string) => `/rias/gallery/${file}`;
+
 const pieces = [
   {
-    title: "Blush tulle twirl",
-    caption: "Party dress · Soft layers",
-    className: "lookbook-card-1",
+    title: "Little Miss Model Sumut 2023",
+    caption: "Blush gown · Night lights · Runner-up sparkle",
+    src: g("little-miss-model-sumut-2023.jpg"),
+    alt: "Young model in a blush pink ruffled gown with Little Miss Model Sumut 2023 sash, holding a trophy by a lit Ferris wheel",
     span: "sm:col-span-2 sm:row-span-2",
+    priority: true,
   },
   {
-    title: "Lilac knit set",
-    caption: "Studio casual · Cozy chic",
-    className: "lookbook-card-2",
+    title: "Boniaga Modeling Look 2025",
+    caption: "Harapan 1 · Kategori Anak · Red & gold",
+    src: g("boniaga-modeling-look-2025.jpg"),
+    alt: "Young model in a red patterned outfit with Harapan 1 Kategori Anak sash, trophy and certificate from Boniaga Modeling Look 2025",
     span: "",
+    priority: false,
   },
   {
-    title: "Cream sailor look",
-    caption: "Portfolio classic · Clean lines",
-    className: "lookbook-card-3",
+    title: "CNY Fashion Show · 1st Winner",
+    caption: "Kalam Kudus · Festive red qipao",
+    src: g("cny-fashion-show-winner.jpg"),
+    alt: "Young model in a red floral Chinese New Year dress holding a first-place fashion show trophy",
     span: "",
+    priority: false,
   },
   {
-    title: "Golden bow blouse",
-    caption: "Occasion top · Sweet detail",
-    className: "lookbook-card-4",
-    span: "sm:col-span-1",
-  },
-  {
-    title: "Rose romper day",
-    caption: "Playdate ready · Easy move",
-    className: "lookbook-card-5",
+    title: "Bunny stage look",
+    caption: "Costume fun · Trophy & sertifikat",
+    src: g("rabbit-ears-trophy.jpg"),
+    alt: "Young model in a fluffy bunny-ear costume holding a trophy and framed certificate",
     span: "",
+    priority: false,
   },
   {
-    title: "Pastel shoot edit",
-    caption: "Mixed looks · Camera soft",
-    className: "lookbook-card-6",
+    title: "Best Performance",
+    caption: "Pink & blue · Number 377",
+    src: g("best-performance.jpg"),
+    alt: "Young model Jocelyn Achiera Sianipar in a pink and blue outfit holding a Best Performance trophy and certificate",
+    span: "",
+    priority: false,
+  },
+  {
+    title: "Colorful stage moment",
+    caption: "Bold palette · Award night",
+    src: g("colorful-stage-trophy.jpg"),
+    alt: "Young model in a colorful asymmetric stage costume holding a trophy and certificate",
     span: "sm:col-span-2",
+    priority: false,
   },
 ];
 
@@ -48,7 +65,7 @@ export default function Lookbook() {
         <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
           <div className="max-w-xl">
             <p className="text-xs font-semibold uppercase tracking-[0.28em] text-gold-light">
-              Lookbook
+              Lookbook &amp; moments
             </p>
             <h2
               id="lookbook-heading"
@@ -57,33 +74,34 @@ export default function Lookbook() {
               Little looks we adore
             </h2>
             <p className="mt-4 text-base leading-relaxed text-cream/75 sm:text-lg">
-              Soft pastel placeholders — cute kidswear moods without external
-              stock photos. Think bows, blush, and camera-ready smiles.
+              Real runway and award moments — Little Miss Model, fashion shows,
+              Best Performance, and cute costume looks that capture RIAS energy.
             </p>
           </div>
         </div>
 
-        <ul className="mt-14 grid gap-4 sm:grid-cols-3 sm:grid-rows-3">
+        <ul className="mt-14 grid gap-4 sm:grid-cols-3 sm:auto-rows-[minmax(220px,auto)]">
           {pieces.map((piece) => (
             <li
-              key={piece.title}
-              className={`group relative min-h-[220px] overflow-hidden rounded-3xl border border-cream/15 ${piece.className} ${piece.span}`}
+              key={piece.src}
+              className={`group relative min-h-[260px] overflow-hidden rounded-3xl border border-cream/15 bg-rose-deep/40 ${piece.span}`}
             >
-              <div className="absolute inset-0 bg-gradient-to-t from-rose-deep/70 via-transparent to-transparent opacity-70 transition-opacity group-hover:opacity-90" />
+              <Image
+                src={piece.src}
+                alt={piece.alt}
+                fill
+                sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                priority={piece.priority}
+                unoptimized
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-rose-deep/85 via-rose-deep/15 to-transparent" />
               <div className="absolute inset-x-0 bottom-0 p-5 md:p-6">
-                <h3 className="font-serif text-xl text-cream md:text-2xl">
+                <h3 className="font-serif text-xl text-cream drop-shadow-sm md:text-2xl">
                   {piece.title}
                 </h3>
-                <p className="mt-1 text-sm text-cream/75">{piece.caption}</p>
+                <p className="mt-1 text-sm text-cream/80">{piece.caption}</p>
               </div>
-              <svg
-                className="absolute right-4 top-4 h-8 w-8 text-cream/25"
-                viewBox="0 0 40 40"
-                fill="currentColor"
-                aria-hidden="true"
-              >
-                <path d="M20 8c-2.5-5-8.5-7-11-4.5 3.5 1.2 6 5 6 5s-5 1.2-7.5 5c2.5 1.2 7.5 0 10-2.5 0 0 1.2 6 2.5 8.5 1.2-2.5 2.5-8.5 2.5-8.5 2.5 2.5 7.5 3.7 10 2.5-2.5-3.8-7.5-5-7.5-5s2.5-3.8 6-5C28.5 1 22.5 3 20 8z" />
-              </svg>
             </li>
           ))}
         </ul>

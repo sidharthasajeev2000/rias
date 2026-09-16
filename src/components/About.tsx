@@ -30,7 +30,7 @@ export default function About() {
               <div className="aspect-square bg-gradient-to-tl from-lilac to-blush/60 p-6">
                 <p className="font-serif text-4xl text-rose-deep">Shine</p>
                 <p className="mt-2 text-xs font-semibold uppercase tracking-[0.18em] text-stone">
-                  On every shoot
+                  On every stage
                 </p>
               </div>
             </div>
@@ -55,8 +55,9 @@ export default function About() {
             </p>
             <p>
               We focus on young models and everyday little stars: portfolio
-              looks, party pieces, gentle alterations, and styling that keeps
-              comfort front and center.
+              looks, party pieces, gentle alterations, and styling for fashion
+              shows and competitions — from Little Miss Model moments to festive
+              runway wins.
             </p>
             <p>
               Intentionally small, intentionally sweet. Parents feel welcome;

@@ -17,7 +17,7 @@ Marketing website for **RIAS**, a cute kidswear and children's modeling brand. B
 
 - Contact form uses **client-side validation only**; successful submit shows a confirmation UI and does not send email or hit an API.
 - Address, phone, hours, and email on the Contact section are **placeholders**.
-- Lookbook cards use CSS gradients / inline SVG placeholders (no external stock image URLs).
+- Lookbook uses real photos in `public/gallery/` (competition / fashion-show moments).
 - Site is a static marketing front; no CMS or auth.
 
 ## Getting started
