@@ -1,6 +1,6 @@
-# Rias — Bespoke Tailoring Atelier
+# RIAS — Kids Modeling & Children's Fashion
 
-Marketing website for **Rias**, a craft-focused bespoke tailoring atelier. Built as a single-page, mobile-responsive experience with smooth-scroll navigation.
+Marketing website for **RIAS**, a cute kidswear and children's modeling brand. Built as a single-page, mobile-responsive experience with smooth-scroll navigation.
 
 **Live site:** [https://sidharthasajeev2000.github.io/rias/](https://sidharthasajeev2000.github.io/rias/)
 
@@ -10,7 +10,7 @@ Marketing website for **Rias**, a craft-focused bespoke tailoring atelier. Built
 
 - [Next.js](https://nextjs.org/) (App Router) + TypeScript
 - [Tailwind CSS](https://tailwindcss.com/) v4
-- Google Fonts: Cormorant Garamond (serif) + Outfit (sans)
+- Google Fonts: Cormorant Garamond (serif wordmark) + Nunito (rounded soft sans)
 - Static export for GitHub Pages (`output: 'export'`, `basePath: '/rias'`)
 
 ## Assumptions
@@ -40,10 +40,10 @@ Open [http://localhost:3000/rias/](http://localhost:3000/rias/) (dev server resp
 
 ## Design notes
 
-- Palette: soft cream / ivory neutrals with deep navy as primary accent and warm gold for highlights.
-- Typography: elegant serif headlines, clean sans body copy, generous whitespace.
-- Tone: refined, warm, craft-first—not a generic SaaS template.
+- Palette: blush pinks, soft lilac, cream, warm white, soft gold accents.
+- Typography: large Cormorant serif **RIAS** wordmark; rounded Nunito body.
+- Tone: girly, cute, polished — kids modeling / children's fashion, not adult bespoke.
 
 ## License
 
-Private project for Rias.
+Private project for RIAS.

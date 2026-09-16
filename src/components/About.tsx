@@ -7,30 +7,30 @@ export default function About() {
     >
       <div className="section-pad mx-auto grid max-w-6xl gap-12 lg:grid-cols-2 lg:items-center lg:gap-20">
         <div className="relative order-2 lg:order-1">
-          <div className="overflow-hidden rounded-[1.5rem] border border-line bg-cream-dark">
+          <div className="overflow-hidden rounded-[1.75rem] border border-line bg-cream-dark">
             <div className="grid grid-cols-2 gap-px bg-line">
-              <div className="aspect-square bg-gradient-to-br from-navy to-navy-soft p-6 text-cream">
-                <p className="font-serif text-4xl">12+</p>
-                <p className="mt-2 text-xs uppercase tracking-[0.18em] text-cream/70">
-                  Years of craft
+              <div className="aspect-square bg-gradient-to-br from-rose to-blush-deep p-6 text-cream">
+                <p className="font-serif text-4xl">♡</p>
+                <p className="mt-2 text-xs font-semibold uppercase tracking-[0.18em] text-cream/80">
+                  Made for kids
                 </p>
               </div>
               <div className="aspect-square bg-ivory p-6">
-                <p className="font-serif text-4xl text-navy">1</p>
-                <p className="mt-2 text-xs uppercase tracking-[0.18em] text-stone">
-                  Dedicated atelier
+                <p className="font-serif text-4xl text-rose-deep">Soft</p>
+                <p className="mt-2 text-xs font-semibold uppercase tracking-[0.18em] text-stone">
+                  Fabrics &amp; fits
                 </p>
               </div>
               <div className="aspect-square bg-ivory p-6">
-                <p className="font-serif text-4xl text-navy">∞</p>
-                <p className="mt-2 text-xs uppercase tracking-[0.18em] text-stone">
-                  Fittings, as needed
+                <p className="font-serif text-4xl text-rose-deep">Fun</p>
+                <p className="mt-2 text-xs font-semibold uppercase tracking-[0.18em] text-stone">
+                  Fitting energy
                 </p>
               </div>
-              <div className="aspect-square bg-gradient-to-tl from-gold/30 to-cream p-6">
-                <p className="font-serif text-4xl text-navy">By hand</p>
-                <p className="mt-2 text-xs uppercase tracking-[0.18em] text-stone">
-                  Finishing & detail
+              <div className="aspect-square bg-gradient-to-tl from-lilac to-blush/60 p-6">
+                <p className="font-serif text-4xl text-rose-deep">Shine</p>
+                <p className="mt-2 text-xs font-semibold uppercase tracking-[0.18em] text-stone">
+                  On every shoot
                 </p>
               </div>
             </div>
@@ -38,30 +38,29 @@ export default function About() {
         </div>
 
         <div className="order-1 lg:order-2">
-          <p className="text-xs font-medium uppercase tracking-[0.28em] text-gold">
+          <p className="text-xs font-semibold uppercase tracking-[0.28em] text-rose">
             Our story
           </p>
           <h2
             id="about-heading"
-            className="mt-3 font-serif text-3xl tracking-tight text-navy sm:text-4xl md:text-5xl"
+            className="mt-3 font-serif text-3xl tracking-tight text-rose-deep sm:text-4xl md:text-5xl"
           >
-            A small atelier with a long memory for detail
+            A small kids fashion studio with a big soft heart
           </h2>
           <div className="mt-6 space-y-4 text-base leading-relaxed text-stone sm:text-lg">
             <p>
-              Rias began as a quiet corner workshop—one sewing machine, a
-              chalk-marked table, and the belief that clothing should feel like it
-              belongs to the person wearing it.
+              RIAS started as a cozy corner for children&apos;s clothes — pastel
+              rails, tiny hangers, and the belief that kids deserve outfits as
+              joyful as they are.
             </p>
             <p>
-              Today we remain intentionally small. That means you meet the same
-              hands that cut and stitch your garment, and conversations that
-              stretch beyond measurements into how you move through your day.
+              We focus on young models and everyday little stars: portfolio
+              looks, party pieces, gentle alterations, and styling that keeps
+              comfort front and center.
             </p>
             <p>
-              We favor natural fabrics, clean lines, and work that lasts. No
-              rush. No assembly-line anonymity. Just careful making, offered with
-              warmth.
+              Intentionally small, intentionally sweet. Parents feel welcome;
+              kids feel like the main character — which, of course, they are.
             </p>
           </div>
         </div>

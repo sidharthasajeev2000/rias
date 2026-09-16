@@ -35,13 +35,14 @@ export default function Header() {
           : "bg-transparent"
       }`}
     >
-      <div className="section-pad mx-auto flex h-16 max-w-6xl items-center justify-between md:h-20">
+      <div className="section-pad mx-auto flex h-18 max-w-6xl items-center justify-between py-3 md:h-24 md:py-0">
         <a
           href="#top"
-          className="font-serif text-2xl tracking-[0.08em] text-navy md:text-[1.65rem]"
+          className="brand-wordmark text-3xl text-rose-deep transition-colors hover:text-rose md:text-4xl lg:text-[2.75rem]"
           onClick={() => setOpen(false)}
+          aria-label="RIAS home"
         >
-          Rias
+          RIAS
         </a>
 
         <nav className="hidden items-center gap-8 md:flex" aria-label="Primary">
@@ -49,22 +50,22 @@ export default function Header() {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm font-medium tracking-wide text-stone transition-colors hover:text-navy"
+              className="text-sm font-semibold tracking-wide text-stone transition-colors hover:text-rose-deep"
             >
               {link.label}
             </a>
           ))}
           <a
             href="#contact"
-            className="rounded-full bg-navy px-5 py-2.5 text-sm font-medium tracking-wide text-cream transition-colors hover:bg-navy-soft"
+            className="rounded-full bg-rose px-5 py-2.5 text-sm font-semibold tracking-wide text-cream shadow-sm transition-colors hover:bg-rose-deep"
           >
-            Book a fitting
+            Book a visit
           </a>
         </nav>
 
         <button
           type="button"
-          className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-line text-navy md:hidden"
+          className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-line bg-ivory text-rose-deep md:hidden"
           aria-expanded={open}
           aria-controls="mobile-nav"
           aria-label={open ? "Close menu" : "Open menu"}
@@ -102,7 +103,7 @@ export default function Header() {
             <a
               key={link.href}
               href={link.href}
-              className="rounded-lg px-3 py-3 text-base text-navy hover:bg-cream-dark"
+              className="rounded-2xl px-3 py-3 text-base font-medium text-rose-deep hover:bg-blush/40"
               onClick={() => setOpen(false)}
             >
               {link.label}
@@ -110,10 +111,10 @@ export default function Header() {
           ))}
           <a
             href="#contact"
-            className="mt-2 rounded-full bg-navy px-5 py-3 text-center text-sm font-medium text-cream"
+            className="mt-2 rounded-full bg-rose px-5 py-3 text-center text-sm font-semibold text-cream"
             onClick={() => setOpen(false)}
           >
-            Book a fitting
+            Book a visit
           </a>
         </nav>
       </div>

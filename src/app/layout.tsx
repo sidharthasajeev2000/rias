@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Outfit } from "next/font/google";
+import { Cormorant_Garamond, Nunito } from "next/font/google";
 import "./globals.css";
 
 const cormorant = Cormorant_Garamond({
@@ -9,29 +9,30 @@ const cormorant = Cormorant_Garamond({
   display: "swap",
 });
 
-const outfit = Outfit({
-  variable: "--font-outfit",
+const nunito = Nunito({
+  variable: "--font-nunito",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
+  weight: ["300", "400", "500", "600", "700"],
   display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Rias — Bespoke Tailoring Atelier",
+  title: "RIAS — Kids Modeling & Children's Fashion",
   description:
-    "Rias is a craft-focused bespoke tailoring atelier offering custom suits, alterations, fittings, bridal and formal wear, and thoughtful restyling.",
+    "RIAS is a cute kidswear and children's modeling brand — portfolio looks, party outfits, kids fittings, shoot styling, and little-star fashion moments.",
   keywords: [
-    "bespoke tailoring",
-    "custom suits",
-    "alterations",
-    "bridal alterations",
-    "atelier",
-    "Rias",
+    "kids modeling",
+    "children's fashion",
+    "kidswear",
+    "kids outfits",
+    "model portfolio",
+    "party dresses kids",
+    "RIAS",
   ],
   openGraph: {
-    title: "Rias — Bespoke Tailoring Atelier",
+    title: "RIAS — Kids Modeling & Children's Fashion",
     description:
-      "Clothes shaped to you. An intimate atelier for custom suits, alterations, and formal wear.",
+      "Little stars, soft styles. Cute kidswear, portfolio looks, and styling for young models.",
     type: "website",
     locale: "en_US",
   },
@@ -46,7 +47,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${cormorant.variable} ${outfit.variable} h-full`}>
+    <html lang="en" className={`${cormorant.variable} ${nunito.variable} h-full`}>
       <body className="min-h-full flex flex-col antialiased font-sans bg-cream text-ink">
         {children}
       </body>
