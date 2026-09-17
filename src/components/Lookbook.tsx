@@ -153,9 +153,9 @@ const pieces = [
   },
   {
     title: "Walikota Cup 1 · Festival Band Remaja",
-    caption: "Juara · Trophy & RP 750.000",
+    caption: "First prize",
     src: g("walikota-cup-1-festival-band-remaja.jpg"),
-    alt: "Young band celebrating Walikota Cup 1 Festival Band Remaja win with trophy, certificate, and RP 750.000 prize board",
+    alt: "Young band celebrating Walikota Cup 1 Festival Band Remaja first prize win with trophy and certificate",
     span: "sm:col-span-2",
     priority: false,
   },
