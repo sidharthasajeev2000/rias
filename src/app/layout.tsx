@@ -63,7 +63,7 @@ export default function RootLayout({
       lang="id"
       className={`${cormorant.variable} ${nunito.variable} ${notoTamil.variable} h-full`}
     >
-      <body className="min-h-full flex flex-col antialiased font-sans bg-cream text-ink">
+      <body className="min-h-full flex flex-col antialiased font-sans text-ink">
         <Providers>{children}</Providers>
       </body>
     </html>

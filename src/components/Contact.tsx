@@ -84,7 +84,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="py-20 md:py-28"
+      className="bg-section-contact py-20 md:py-28"
       aria-labelledby="contact-heading"
     >
       <div className="section-pad mx-auto grid max-w-6xl gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
@@ -173,7 +173,7 @@ export default function Contact() {
           </dl>
         </div>
 
-        <div className="rounded-3xl border border-line bg-ivory p-6 shadow-[0_24px_50px_-36px_rgba(158,74,106,0.35)] sm:p-8">
+        <div className="panel-soft rounded-3xl border border-line p-6 shadow-[0_24px_50px_-36px_rgba(158,74,106,0.35)] sm:p-8">
           {submitted ? (
             <div
               className="flex min-h-[320px] flex-col items-start justify-center"

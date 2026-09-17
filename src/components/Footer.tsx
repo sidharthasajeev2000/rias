@@ -9,7 +9,7 @@ export default function Footer() {
   const phones = t.contact.phones;
 
   return (
-    <footer className="border-t border-line bg-cream-dark">
+    <footer className="bg-footer border-t border-line">
       <div className="section-pad mx-auto max-w-6xl py-10">
         <div className="flex flex-col gap-8 lg:flex-row lg:items-start lg:justify-between">
           <div>

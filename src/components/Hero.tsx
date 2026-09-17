@@ -8,17 +8,22 @@ export default function Hero() {
   return (
     <section
       id="top"
-      className="relative overflow-hidden pt-32 pb-20 md:pt-40 md:pb-28"
+      className="bg-hero relative overflow-hidden pt-32 pb-20 md:pt-40 md:pb-28"
       aria-labelledby="hero-heading"
     >
       <div
         className="pointer-events-none absolute inset-0 -z-10"
         aria-hidden="true"
       >
-        <div className="absolute -right-20 top-8 h-80 w-80 rounded-full bg-blush/50 blur-3xl" />
-        <div className="absolute -left-16 bottom-0 h-72 w-72 rounded-full bg-lilac/45 blur-3xl" />
-        <div className="absolute left-1/2 top-24 h-40 w-40 -translate-x-1/2 rounded-full bg-gold-light/30 blur-2xl" />
+        <div className="absolute -right-20 top-8 h-80 w-80 rounded-full bg-blush/55 blur-3xl" />
+        <div className="absolute -left-16 bottom-0 h-72 w-72 rounded-full bg-lilac/50 blur-3xl" />
+        <div className="absolute left-1/2 top-24 h-44 w-44 -translate-x-1/2 rounded-full bg-gold-light/35 blur-2xl" />
+        <div className="absolute right-[28%] bottom-16 h-36 w-36 rounded-full bg-blush-deep/25 blur-3xl" />
+        <div className="absolute left-[22%] top-[55%] h-28 w-28 rounded-full bg-lilac-deep/20 blur-2xl" />
         <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-blush-deep/40 to-transparent" />
+        {/* Soft floating shapes */}
+        <div className="absolute right-[8%] top-[42%] h-16 w-16 rotate-12 rounded-[1.25rem] border border-blush-deep/20 bg-blush/25 backdrop-blur-[2px]" />
+        <div className="absolute left-[6%] top-[32%] h-10 w-10 rounded-full border border-lilac-deep/25 bg-lilac/30" />
         <svg
           className="sparkle absolute right-[18%] top-28 h-5 w-5 text-gold"
           viewBox="0 0 24 24"
@@ -33,11 +38,25 @@ export default function Hero() {
         >
           <path d="M12 2l1.2 6.3L19 12l-5.8 3.7L12 22l-1.2-6.3L5 12l5.8-3.7L12 2z" />
         </svg>
+        <svg
+          className="sparkle-delay-2 absolute right-[32%] top-[58%] h-3 w-3 text-lilac-deep"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+        >
+          <path d="M12 2l1.2 6.3L19 12l-5.8 3.7L12 22l-1.2-6.3L5 12l5.8-3.7L12 2z" />
+        </svg>
+        <svg
+          className="sparkle absolute left-[40%] bottom-24 h-2.5 w-2.5 text-gold-light"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+        >
+          <path d="M12 2l1.2 6.3L19 12l-5.8 3.7L12 22l-1.2-6.3L5 12l5.8-3.7L12 2z" />
+        </svg>
       </div>
 
       <div className="section-pad mx-auto grid max-w-6xl gap-12 lg:grid-cols-[1.15fr_0.85fr] lg:items-center lg:gap-16">
         <div>
-          <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-line bg-ivory/80 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.22em] text-rose">
+          <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-line bg-ivory/80 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.22em] text-rose shadow-[0_8px_24px_-16px_rgba(158,74,106,0.35)] backdrop-blur-sm">
             <span aria-hidden="true">♡</span>
             {t.hero.badge}
           </p>
@@ -62,7 +81,7 @@ export default function Hero() {
             </a>
             <a
               href="#lookbook"
-              className="inline-flex items-center justify-center rounded-full border border-rose/25 bg-ivory px-7 py-3.5 text-sm font-semibold tracking-wide text-rose-deep transition-colors hover:border-rose/45 hover:bg-blush/30"
+              className="inline-flex items-center justify-center rounded-full border border-rose/25 bg-ivory/90 px-7 py-3.5 text-sm font-semibold tracking-wide text-rose-deep backdrop-blur-sm transition-colors hover:border-rose/45 hover:bg-blush/30"
             >
               {t.hero.ctaSecondary}
             </a>
@@ -76,7 +95,7 @@ export default function Hero() {
                 className="absolute inset-0"
                 style={{
                   background:
-                    "radial-gradient(ellipse at 70% 15%, #fffcfa 0%, transparent 45%), linear-gradient(165deg, #f9d5e5 0%, #e8d5f5 50%, #e8a0b8 100%)",
+                    "radial-gradient(ellipse at 70% 15%, #fffcfa 0%, transparent 45%), radial-gradient(ellipse at 20% 85%, rgba(232,213,245,0.7) 0%, transparent 50%), linear-gradient(165deg, #f9d5e5 0%, #e8d5f5 50%, #e8a0b8 100%)",
                 }}
                 aria-hidden="true"
               />

@@ -9,7 +9,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="py-20 md:py-28"
+      className="bg-section-about py-20 md:py-28"
       aria-labelledby="about-heading"
     >
       <div className="section-pad mx-auto grid max-w-6xl gap-12 lg:grid-cols-2 lg:items-center lg:gap-20">

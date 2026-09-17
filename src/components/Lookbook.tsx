@@ -175,7 +175,7 @@ export default function Lookbook() {
   return (
     <section
       id="lookbook"
-      className="border-y border-line bg-gradient-to-b from-rose-deep to-[#8a3d5c] py-20 text-cream md:py-28"
+      className="bg-section-lookbook border-y border-rose-deep/40 py-20 md:py-28"
       aria-labelledby="lookbook-heading"
     >
       <div className="section-pad mx-auto max-w-6xl">

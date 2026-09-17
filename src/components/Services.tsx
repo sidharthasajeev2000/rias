@@ -77,7 +77,7 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="border-y border-line bg-ivory py-20 md:py-28"
+      className="bg-section-ivory border-y border-line py-20 md:py-28"
       aria-labelledby="services-heading"
     >
       <div className="section-pad mx-auto max-w-6xl">
@@ -100,7 +100,7 @@ export default function Services() {
           {t.services.items.map((service, i) => (
             <li
               key={service.title}
-              className="group rounded-3xl border border-line bg-cream p-7 transition-shadow hover:shadow-[0_20px_40px_-28px_rgba(158,74,106,0.3)]"
+              className="group rounded-3xl border border-line bg-cream/90 p-7 shadow-[0_12px_32px_-28px_rgba(158,74,106,0.2)] backdrop-blur-[2px] transition-shadow hover:shadow-[0_20px_40px_-28px_rgba(158,74,106,0.3)]"
             >
               <div className="mb-5 inline-flex rounded-2xl border border-line bg-blush/30 p-2.5 text-rose transition-colors group-hover:border-blush-deep/40 group-hover:bg-blush/50">
                 {icons[i]}
