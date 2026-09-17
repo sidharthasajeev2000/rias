@@ -47,7 +47,7 @@ html {
 body {
   background: var(--cream);
   color: var(--ink);
-  font-family: var(--font-nunito), system-ui, sans-serif;
+  font-family: var(--font-nunito), var(--font-tamil), system-ui, sans-serif;
 }
 
 ::selection {

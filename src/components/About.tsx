@@ -1,4 +1,11 @@
+"use client";
+
+import { useLanguage } from "@/i18n/LanguageContext";
+
 export default function About() {
+  const { t } = useLanguage();
+  const [a, b, c, d] = t.about.tiles;
+
   return (
     <section
       id="about"
@@ -10,27 +17,27 @@ export default function About() {
           <div className="overflow-hidden rounded-[1.75rem] border border-line bg-cream-dark">
             <div className="grid grid-cols-2 gap-px bg-line">
               <div className="aspect-square bg-gradient-to-br from-rose to-blush-deep p-6 text-cream">
-                <p className="font-serif text-4xl">♡</p>
+                <p className="font-serif text-4xl">{a.title}</p>
                 <p className="mt-2 text-xs font-semibold uppercase tracking-[0.18em] text-cream/80">
-                  All women
+                  {a.subtitle}
                 </p>
               </div>
               <div className="aspect-square bg-ivory p-6">
-                <p className="font-serif text-4xl text-rose-deep">Soft</p>
+                <p className="font-serif text-4xl text-rose-deep">{b.title}</p>
                 <p className="mt-2 text-xs font-semibold uppercase tracking-[0.18em] text-stone">
-                  Fabrics &amp; fits
+                  {b.subtitle}
                 </p>
               </div>
               <div className="aspect-square bg-ivory p-6">
-                <p className="font-serif text-4xl text-rose-deep">Fun</p>
+                <p className="font-serif text-4xl text-rose-deep">{c.title}</p>
                 <p className="mt-2 text-xs font-semibold uppercase tracking-[0.18em] text-stone">
-                  Fitting energy
+                  {c.subtitle}
                 </p>
               </div>
               <div className="aspect-square bg-gradient-to-tl from-lilac to-blush/60 p-6">
-                <p className="font-serif text-4xl text-rose-deep">Shine</p>
+                <p className="font-serif text-4xl text-rose-deep">{d.title}</p>
                 <p className="mt-2 text-xs font-semibold uppercase tracking-[0.18em] text-stone">
-                  On every stage
+                  {d.subtitle}
                 </p>
               </div>
             </div>
@@ -39,30 +46,18 @@ export default function About() {
 
         <div className="order-1 lg:order-2">
           <p className="text-xs font-semibold uppercase tracking-[0.28em] text-rose">
-            Our story
+            {t.about.eyebrow}
           </p>
           <h2
             id="about-heading"
             className="mt-3 font-serif text-3xl tracking-tight text-rose-deep sm:text-4xl md:text-5xl"
           >
-            A soft fashion studio for women and girls
+            {t.about.title}
           </h2>
           <div className="mt-6 space-y-4 text-base leading-relaxed text-stone sm:text-lg">
-            <p>
-              RIAS began as a cozy corner for sweet styles — pastel rails,
-              careful fittings, and the belief that every girl and woman
-              deserves outfits as joyful as she is.
-            </p>
-            <p>
-              We welcome female models of all ages: kids and adults — portfolio
-              looks, party and occasion pieces, gentle alterations, and styling
-              for fashion shows, runway, and pageants.
-            </p>
-            <p>
-              Intentionally small, intentionally sweet. Families and models feel
-              welcome; every client feels like the main character — which, of
-              course, she is.
-            </p>
+            <p>{t.about.p1}</p>
+            <p>{t.about.p2}</p>
+            <p>{t.about.p3}</p>
           </div>
         </div>
       </div>

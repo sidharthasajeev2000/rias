@@ -1,4 +1,10 @@
+"use client";
+
+import { useLanguage } from "@/i18n/LanguageContext";
+
 export default function Hero() {
+  const { t } = useLanguage();
+
   return (
     <section
       id="top"
@@ -13,7 +19,6 @@ export default function Hero() {
         <div className="absolute -left-16 bottom-0 h-72 w-72 rounded-full bg-lilac/45 blur-3xl" />
         <div className="absolute left-1/2 top-24 h-40 w-40 -translate-x-1/2 rounded-full bg-gold-light/30 blur-2xl" />
         <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-blush-deep/40 to-transparent" />
-        {/* tasteful sparkles */}
         <svg
           className="sparkle absolute right-[18%] top-28 h-5 w-5 text-gold"
           viewBox="0 0 24 24"
@@ -34,7 +39,7 @@ export default function Hero() {
         <div>
           <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-line bg-ivory/80 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.22em] text-rose">
             <span aria-hidden="true">♡</span>
-            Women &amp; girls modeling
+            {t.hero.badge}
           </p>
           <h1
             id="hero-heading"
@@ -43,25 +48,23 @@ export default function Hero() {
             RIAS
           </h1>
           <p className="mt-4 font-serif text-2xl italic leading-snug text-rose-soft sm:text-3xl md:text-4xl">
-            Soft styles. Every age.
+            {t.hero.tagline}
           </p>
           <p className="mt-6 max-w-xl text-base leading-relaxed text-stone sm:text-lg">
-            RIAS is a sweet space for female models — girls and women —
-            portfolio looks, runway and pageant prep, gentle fittings, and
-            styling that lets every personality shine.
+            {t.hero.body}
           </p>
           <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:items-center">
             <a
               href="#contact"
               className="inline-flex items-center justify-center rounded-full bg-rose px-7 py-3.5 text-sm font-semibold tracking-wide text-cream shadow-sm transition-colors hover:bg-rose-deep"
             >
-              Book a visit
+              {t.hero.ctaPrimary}
             </a>
             <a
               href="#lookbook"
               className="inline-flex items-center justify-center rounded-full border border-rose/25 bg-ivory px-7 py-3.5 text-sm font-semibold tracking-wide text-rose-deep transition-colors hover:border-rose/45 hover:bg-blush/30"
             >
-              See the lookbook
+              {t.hero.ctaSecondary}
             </a>
           </div>
         </div>
@@ -77,7 +80,6 @@ export default function Hero() {
                 }}
                 aria-hidden="true"
               />
-              {/* bow accent */}
               <svg
                 className="absolute right-6 top-8 h-16 w-16 text-rose/35"
                 viewBox="0 0 64 64"
@@ -88,22 +90,22 @@ export default function Hero() {
               </svg>
               <div className="relative pt-2">
                 <p className="text-xs font-semibold uppercase tracking-[0.24em] text-rose">
-                  For women &amp; girls
+                  {t.hero.cardEyebrow}
                 </p>
                 <p className="mt-4 font-serif text-3xl leading-snug md:text-4xl">
-                  Cute looks.
+                  {t.hero.cardLines[0]}
                   <br />
-                  Soft fits.
+                  {t.hero.cardLines[1]}
                   <br />
-                  Big smiles.
+                  {t.hero.cardLines[2]}
                 </p>
               </div>
               <div className="relative border-t border-rose-deep/15 pt-5">
                 <p className="text-xs font-semibold uppercase tracking-[0.2em] text-rose">
-                  Modeling atelier
+                  {t.hero.cardFooterLabel}
                 </p>
                 <p className="mt-2 text-sm text-rose-deep/75">
-                  Kids &amp; adult · Portfolio · Runway · Pageants
+                  {t.hero.cardFooterMeta}
                 </p>
               </div>
             </div>

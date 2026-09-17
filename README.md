@@ -10,13 +10,14 @@ Marketing website for **RIAS**, a cute women and girls modeling brand (kids and 
 
 - [Next.js](https://nextjs.org/) (App Router) + TypeScript
 - [Tailwind CSS](https://tailwindcss.com/) v4
-- Google Fonts: Cormorant Garamond (serif wordmark) + Nunito (rounded soft sans)
+- Google Fonts: Cormorant Garamond (serif wordmark) + Nunito (rounded soft sans) + Noto Sans Tamil
+- Client-side i18n: Bahasa Indonesia (default) / English / தமிழ், persisted in localStorage
 - Static export for GitHub Pages (`output: 'export'`, `basePath: '/rias'`)
 
 ## Assumptions
 
 - Contact form uses **client-side validation only**; successful submit shows a confirmation UI and does not send email or hit an API.
-- Address, phone, hours, and email on the Contact section are **placeholders**.
+- Contact shows real phones (Malaysia + Indonesia with WhatsApp), addresses in Pematangsiantar and Kuala Lumpur; no placeholder email.
 - Lookbook uses real photos in `public/gallery/` (competition / fashion-show moments).
 - Site is a static marketing front; no CMS or auth.
 

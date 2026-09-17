@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { useLanguage } from "@/i18n/LanguageContext";
 
 /** Public asset path including GitHub Pages basePath (Image unoptimized may not prefix). */
 const g = (file: string) => `/rias/gallery/${file}`;
@@ -151,6 +154,8 @@ const pieces = [
 ];
 
 export default function Lookbook() {
+  const { t } = useLanguage();
+
   return (
     <section
       id="lookbook"
@@ -161,18 +166,16 @@ export default function Lookbook() {
         <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
           <div className="max-w-xl">
             <p className="text-xs font-semibold uppercase tracking-[0.28em] text-gold-light">
-              Lookbook &amp; moments
+              {t.lookbook.eyebrow}
             </p>
             <h2
               id="lookbook-heading"
               className="mt-3 font-serif text-3xl tracking-tight sm:text-4xl md:text-5xl"
             >
-              Looks we adore
+              {t.lookbook.title}
             </h2>
             <p className="mt-4 text-base leading-relaxed text-cream/75 sm:text-lg">
-              Real runway and award moments — pageants, fashion shows, Best
-              Performance, and stage looks that capture RIAS energy for women
-              and girls.
+              {t.lookbook.intro}
             </p>
           </div>
         </div>

@@ -1,17 +1,20 @@
 "use client";
 
 import { useEffect, useState } from "react";
-
-const links = [
-  { href: "#services", label: "Services" },
-  { href: "#about", label: "About" },
-  { href: "#lookbook", label: "Lookbook" },
-  { href: "#contact", label: "Contact" },
-];
+import LanguageSwitcher from "@/components/LanguageSwitcher";
+import { useLanguage } from "@/i18n/LanguageContext";
 
 export default function Header() {
+  const { t } = useLanguage();
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+
+  const links = [
+    { href: "#services", label: t.nav.services },
+    { href: "#about", label: t.nav.about },
+    { href: "#lookbook", label: t.nav.lookbook },
+    { href: "#contact", label: t.nav.contact },
+  ];
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -40,12 +43,12 @@ export default function Header() {
           href="#top"
           className="brand-wordmark text-3xl text-rose-deep transition-colors hover:text-rose md:text-4xl lg:text-[2.75rem]"
           onClick={() => setOpen(false)}
-          aria-label="RIAS home"
+          aria-label={t.nav.homeAria}
         >
           RIAS
         </a>
 
-        <nav className="hidden items-center gap-8 md:flex" aria-label="Primary">
+        <nav className="hidden items-center gap-6 lg:gap-8 md:flex" aria-label="Primary">
           {links.map((link) => (
             <a
               key={link.href}
@@ -55,41 +58,45 @@ export default function Header() {
               {link.label}
             </a>
           ))}
+          <LanguageSwitcher compact />
           <a
             href="#contact"
             className="rounded-full bg-rose px-5 py-2.5 text-sm font-semibold tracking-wide text-cream shadow-sm transition-colors hover:bg-rose-deep"
           >
-            Book a visit
+            {t.nav.bookVisit}
           </a>
         </nav>
 
-        <button
-          type="button"
-          className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-line bg-ivory text-rose-deep md:hidden"
-          aria-expanded={open}
-          aria-controls="mobile-nav"
-          aria-label={open ? "Close menu" : "Open menu"}
-          onClick={() => setOpen((v) => !v)}
-        >
-          <span className="sr-only">{open ? "Close" : "Menu"}</span>
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            {open ? (
-              <path
-                d="M6 6l12 12M18 6L6 18"
-                stroke="currentColor"
-                strokeWidth="1.75"
-                strokeLinecap="round"
-              />
-            ) : (
-              <path
-                d="M4 8h16M4 16h16"
-                stroke="currentColor"
-                strokeWidth="1.75"
-                strokeLinecap="round"
-              />
-            )}
-          </svg>
-        </button>
+        <div className="flex items-center gap-2 md:hidden">
+          <LanguageSwitcher compact />
+          <button
+            type="button"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-line bg-ivory text-rose-deep"
+            aria-expanded={open}
+            aria-controls="mobile-nav"
+            aria-label={open ? t.nav.closeMenu : t.nav.openMenu}
+            onClick={() => setOpen((v) => !v)}
+          >
+            <span className="sr-only">{open ? t.nav.closeMenu : t.nav.openMenu}</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              {open ? (
+                <path
+                  d="M6 6l12 12M18 6L6 18"
+                  stroke="currentColor"
+                  strokeWidth="1.75"
+                  strokeLinecap="round"
+                />
+              ) : (
+                <path
+                  d="M4 8h16M4 16h16"
+                  stroke="currentColor"
+                  strokeWidth="1.75"
+                  strokeLinecap="round"
+                />
+              )}
+            </svg>
+          </button>
+        </div>
       </div>
 
       <div
@@ -114,7 +121,7 @@ export default function Header() {
             className="mt-2 rounded-full bg-rose px-5 py-3 text-center text-sm font-semibold text-cream"
             onClick={() => setOpen(false)}
           >
-            Book a visit
+            {t.nav.bookVisit}
           </a>
         </nav>
       </div>
