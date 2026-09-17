@@ -151,6 +151,22 @@ const pieces = [
     span: "sm:col-span-2",
     priority: false,
   },
+  {
+    title: "Walikota Cup 1 · Festival Band Remaja",
+    caption: "Juara · Trophy & RP 750.000",
+    src: g("walikota-cup-1-festival-band-remaja.jpg"),
+    alt: "Young band celebrating Walikota Cup 1 Festival Band Remaja win with trophy, certificate, and RP 750.000 prize board",
+    span: "sm:col-span-2",
+    priority: false,
+  },
+  {
+    title: "Mall stage · Live set",
+    caption: "Lead vocals · Full band energy",
+    src: g("mall-stage-live-performance.jpg"),
+    alt: "Young girl singing lead vocals with her band on a red-carpet mall atrium stage",
+    span: "",
+    priority: false,
+  },
 ];
 
 export default function Lookbook() {
