@@ -167,6 +167,22 @@ const pieces = [
     span: "",
     priority: false,
   },
+  {
+    title: "Best Face · Indonesian Star Model 2026",
+    caption: "First prize · Best Face",
+    src: g("best-face-indonesian-star-model-2026.jpg"),
+    alt: "Jocelyn Achiera Sianipar in a 1st Winner commemorative graphic for Best Face of Indonesian Star Model 2026, holding a trophy and certificate",
+    span: "",
+    priority: false,
+  },
+  {
+    title: "Traditional gold · Dara Cilik",
+    caption: "Juara 2 · Dara Cilik Kota Medan",
+    src: g("juara-2-dara-cilik-kota-medan.jpg"),
+    alt: "Young model in a traditional yellow and gold look with sash and trophy as Juara 2 Dara Cilik Kota Medan",
+    span: "",
+    priority: false,
+  },
 ];
 
 export default function Lookbook() {
